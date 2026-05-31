@@ -1,4 +1,4 @@
-readme_content = """# Robot Cuadrúpedo Autónomo 🤖🐾
+## Robot Cuadrúpedo Autónomo 🤖
 
 ![Estado del Proyecto](https://img.shields.io/badge/Estado-Completado-brightgreen)
 ![Materia](https://img.shields.io/badge/Asignatura-Mecatr%C3%B3nica-blue)
