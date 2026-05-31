@@ -1,9 +1,5 @@
 ## Robot Cuadrúpedo Autónomo 🤖
 
-![Estado del Proyecto](https://img.shields.io/badge/Estado-Completado-brightgreen)
-![Materia](https://img.shields.io/badge/Asignatura-Mecatr%C3%B3nica-blue)
-![Enfoque](https://img.shields.io/badge/Enfoque-Rob%C3%B3tica%20con%20Patas-orange)
-
 Este repositorio contiene la documentación técnica y el código fuente del proyecto final de **Robot con Patas** para la asignatura de **Mecatrónica**. En este trabajo se ha diseñado, fabricado, programado y validado experimentalmente un robot cuadrúpedo capaz de desplazarse de forma estable, transportar carga útil, realizar el seguimiento continuo de una pared y navegar autónomamente evadiendo obstáculos del entorno.
 
 ---
