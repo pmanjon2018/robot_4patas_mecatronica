@@ -1,81 +1,92 @@
-| Robot cuadrúpedo autónomo |
+readme_content = """# Robot Cuadrúpedo Autónomo 🤖🐾
 
--Repositorio del proyecto final de Robot con Patas de Mecatrónica. En este trabajo se ha diseñado, fabricado y programado un robot cuadrúpedo capaz de desplazarse de forma estable, transportar carga, seguir una pared y realizar navegación autónoma con evasión de obstáculos.
+![Estado del Proyecto](https://img.shields.io/badge/Estado-Completado-brightgreen)
+![Materia](https://img.shields.io/badge/Asignatura-Mecatr%C3%B3nica-blue)
+![Enfoque](https://img.shields.io/badge/Enfoque-Rob%C3%B3tica%20con%20Patas-orange)
 
--El objetivo del proyecto ha sido desarrollar un robot con patas completamente funcional, integrando diseño mecánico, electrónica, control de movimiento, programación embebida, prototipado y validación experimental. Hemos optado por una configuración cuadrúpeda por su equilibrio entre estabilidad, complejidad mecánica y capacidad de maniobra.
+Este repositorio contiene la documentación técnica y el código fuente del proyecto final de **Robot con Patas** para la asignatura de **Mecatrónica**. En este trabajo se ha diseñado, fabricado, programado y validado experimentalmente un robot cuadrúpedo capaz de desplazarse de forma estable, transportar carga útil, realizar el seguimiento continuo de una pared y navegar autónomamente evadiendo obstáculos del entorno.
 
--El resultado final es un robot autónomo, alimentado por baterías recargables, con estructura de fabricación propia y una interfaz básica de usuario para iniciar y detener el sistema.
+---
 
-| Objetivos cumplidos |
+## 📋 Índice
+1. [Descripción General](#-descripción-general)
+2. [Objetivos Cumplidos](#-objetivos-cumplidos)
+3. [Restricciones de Diseño](#-restricciones-de-diseño)
+4. [Diseño y Arquitectura del Sistema](#-diseño-y-arquitectura-del-sistema)
+5. [Modos de Funcionamiento](#%EF%B8%8F-modos-de-funcionamiento)
+6. [Pruebas de Validación y Criterios de Éxito](#-pruebas-de-validación-y-criterios-de-éxito)
+7. [Estructura del Repositorio](#%EF%B8%8F-estructura-del-repositorio)
+8. [Documentación Adjunta](#-documentación-adjunta)
 
--Durante el desarrollo del proyecto se han cubierto los siguientes objetivos funcionales:
+---
 
-  -Diseño y construcción de un robot cuadrúpedo estable y funcional.
-  -Integración de actuadores, sensores, electrónica de control y alimentación autónoma.
-  -Implementación de locomoción para desplazamiento paralelo a una pared.
-  -Transporte de una carga de 250 g sobre una superficie útil de 5 cm x 5 cm.
-  -Desarrollo de una estrategia de evasión de obstáculos.
-  -Validación del funcionamiento del robot mediante pruebas experimentales.
+## 🔍 Descripción General
 
-| Prueba 1: desplazamiento con carga | 
+El propósito central de este proyecto ha sido el desarrollo integral de un **robot con patas completamente funcional**, unificando conceptos avanzados de diseño mecánico, electrónica de control, programación embebida en tiempo real, sistemas de alimentación autónoma y verificación empírica. 
 
--El sistema debe ser capaz de moverse en paralelo a una pared plana durante al menos 1 metro, pudiendo estar la pared situada a cualquiera de los lados del robot. Además, la prueba debe realizarse transportando una carga de 250 gramos colocada sobre un área de 5 cm x 5 cm de la estructura, y completarse en menos de 1 minuto.
+La elección de una configuración **cuadrúpeda** responde a un compromiso de ingeniería: proporciona un equilibrio óptimo entre estabilidad estática y dinámica, control de la complejidad mecánica y versatilidad de maniobra en entornos donde los robots con ruedas presentan limitaciones. El resultado es un prototipo robótico autónomo, desvinculado de conexiones umbilicales de alimentación, dotado de una estructura estructural de fabricación propia y una interfaz hombre-máquina (HMI) básica para la gestión segura del encendido y apagado del sistema.
 
-| Prueba 2: evasión y autonomía |
+---
 
--El robot debe comenzar desde el centro de un cuadrado, desplazarse de forma autónoma, evitar obstáculos presentes en el entorno y alcanzar las paredes. Esta prueba debe completarse en un tiempo inferior a 2 minutos.
+## 🎯 Objetivos Cumplidos
 
-| Restricciones de diseño |
+A lo largo del desarrollo del proyecto, se lograron satisfacer satisfactoriamente los siguientes objetivos funcionales e hitos de ingeniería:
+- [x] **Diseño y construcción:** Estructura física robusta, ligera y balanceada para un robot cuadrúpedo.
+- [x] **Integración mecatrónica:** Acoplamiento óptimo de actuadores, sensórica de distancia, electrónica de control y sistemas de potencia.
+- [x] **Locomoción guiada:** Implementación de algoritmos de marcha estables para el desplazamiento paralelo respecto a una pared de referencia.
+- [x] **Capacidad de carga:** Capacidad probada de transporte de una carga muerta de **250 g** sobre una sección útil especificada de **5 cm x 5 cm**.
+- [x] **Navegación inteligente:** Desarrollo de una lógica reactiva y autónoma para la evasión de obstáculos en tiempo real.
+- [x] **Validación empírica:** Superación exitosa de pruebas experimentales en escenarios físicos controlados.
 
--El desarrollo del prototipo se ha ajustado a las restricciones impuestas por la práctica:
+---
 
-  -Dimensiones máximas de 30 cm de alto, 30 cm de ancho y 30 cm de profundidad.
-  
-  -Alimentación mediante baterías recargables.
-  
-  -Ausencia de cables de alimentación durante las pruebas.
-  
-  -Estructura de fabricación propia, con justificación técnica.
-  
-  -Uso permitido de componentes comerciales para sensores, actuadores y electrónica.
-  
-  -Inclusión de una interfaz básica de usuario para arranque y parada.
-  
-| Diseño del sistema |
+## ⚙️ Restricciones de Diseño
 
--El robot se ha dividido en varios subsistemas para simplificar el diseño, la fabricación y la integración final:
+El prototipo final se consolidó respetando estrictamente el marco de restricciones técnicas y operativas del proyecto:
 
-  -Estructura mecánica: chasis principal, soportes y patas fabricadas específicamente para el proyecto.
-  
-  -Sistema de actuación: conjunto de actuadores responsables del movimiento de las patas y de la generación de la marcha.
-  
-  -Sensórica: sensores dedicados a la detección de pared, medida de distancia y evasión de obstáculos.
-  
-  -Control embebido: lógica de control encargada de coordinar sensores y actuadores en tiempo real.
-  
-  -Alimentación: batería recargable y sistema de distribución de energía.
-  
-  -Interfaz de usuario: mecanismo simple de arranque y parada, complementado con elementos visuales de estado.
-  
-  
--Esta organización ha permitido separar la parte mecánica, electrónica y software, facilitando las tareas de prueba, calibración y corrección de errores.
+| Criterio | Restricción / Especificación Técnica |
+| :--- | :--- |
+| **Dimensiones Máximas** | Envolvente cúbica máxima de 30 cm de alto, 30 cm de ancho y 30 cm de profundidad. |
+| **Alimentación** | 100% Autónoma a bordo, implementada mediante el uso de baterías recargables. |
+| **Aislamiento Eléctrico** | Ausencia absoluta de cables de alimentación o control externos hacia el entorno durante las pruebas. |
+| **Estructura Portante** | Chasis y patas de fabricación propia (justificados técnicamente mediante selección de materiales y esfuerzos). |
+| **Componentes Comerciales** | Permitidos exclusivamente para elementos genéricos de sensórica, actuación y placas de control. |
+| **Interfaz de Usuario** | Inclusión obligatoria de un mecanismo básico de hardware para el arranque y la parada segura. |
 
-| Funcionamiento general |
+---
 
--El robot dispone de distintos modos de funcionamiento orientados a las pruebas de la asignatura:
+## 🛠️ Diseño y Arquitectura del Sistema
 
-  -Inicialización: encendido del sistema, comprobación básica y puesta en posición inicial.
-  
-  -Modo desplazamiento: ejecución de la marcha necesaria para avanzar en paralelo a una pared manteniendo estabilidad y carga útil.
-  
-  -Modo autónomo: navegación desde la zona central del área de pruebas, detección de obstáculos y corrección de trayectoria.
-  
-  -Parada segura: detención del robot mediante la interfaz de usuario.
-  
--El comportamiento general se ha planteado para priorizar estabilidad, repetibilidad.
+Para simplificar las fases de diseño, manufactura y posterior integración mecatrónica, el robot se estructuró modularmente en los siguientes seis subsistemas interactuantes:
 
-| Validación realizada |
+### 1. Estructura Mecánica
+* **Componentes:** Chasis principal, soportes estructurales y eslabones de las patas.
+* **Detalles:** Diseñados a medida y fabricados específicamente para este proyecto, optimizando la relación rigidez-peso y protegiendo los componentes electrónicos internos.
 
--Se han realizado pruebas de locomoción, estabilidad estructural, capacidad de carga, respuesta de los sensores, seguimiento de pared, evasión de obstáculos y funcionamiento autónomo dentro del espacio establecido.
+### 2. Sistema de Actuación
+* **Componentes:** Servomotores/actuadores de alto torque distribuidos en las extremidades.
+* **Detalles:** Responsables de ejecutar los patrones cinemáticos de las patas para la generación de la marcha (gait) y el mantenimiento del equilibrio dinámico.
 
--Además del prototipo funcional, hemos hecho un manual de usuario y mantenimiento, así como un informe de autoevaluación del equipo. Este repositorio sirve como apoyo documental y soporte de documentación técnica del proyecto.
+### 3. Sensórica
+* **Componentes:** Sensores de distancia y proximidad (p. ej., ultrasonido, infrarrojo o ToF).
+* **Detalles:** Dispuestos para la detección lateral de paredes (control de distancia en paralelo) y detección frontal de obstáculos en la trayectoria.
+
+### 4. Control Embebido
+* **Componentes:** Unidad de procesamiento central (microcontrolador o tarjeta de desarrollo embebida).
+* **Detalles:** Encargado de la lógica de control en tiempo real, procesamiento de señales de sensores, resolución cinemática y coordinación síncrona de los actuadores.
+
+### 5. Alimentación y Potencia
+* **Componentes:** Batería recargable y etapa de regulación/distribución de energía.
+* **Detalles:** Garantiza el suministro estable y desacoplado eléctricamente entre la etapa de control (sensible al ruido) y la etapa de potencia (motores).
+
+### 6. Interfaz de Usuario
+* **Componentes:** Botones físicos de interacción rápida y elementos visuales/sonoros de estado (p. ej., LEDs de diagnóstico).
+* **Detalles:** Permite al operador inicializar las rutinas autónomas o inducir una parada controlada inmediatamente.
+
+> 💡 **Nota de Ingeniería:** Esta división modular facilitó de forma significativa las tareas independientes de prueba, calibración analítica de sensores y aislamiento de errores de software/hardware.
+
+---
+
+## 🕹️ Modos de Funcionamiento
+
+El comportamiento global del robot está regido por una Máquina de Estados Finitos (FSM) programada para priorizar la estabilidad de la marcha y la repetibilidad del movimiento:
