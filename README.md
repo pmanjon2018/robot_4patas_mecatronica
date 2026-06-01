@@ -80,9 +80,8 @@ Para simplificar las fases de diseño, manufactura y posterior integración meca
 * **Detalles:** Permite al operador inicializar las rutinas autónomas o inducir una parada controlada inmediatamente.
 
 > 💡 **Nota de Ingeniería:** Esta división modular facilitó de forma significativa las tareas independientes de prueba, calibración analítica de sensores y aislamiento de errores de software/hardware.
-> Me he basado en el modelo open source https://www.thingiverse.com/thing:1009659/files en el cual he adaptado los componentes con Blender.
-
 ---
+Me he basado en el modelo open source https://www.thingiverse.com/thing:1009659/files en el cual he adaptado los componentes con Blender.
 
 ## 🕹️ Modos de Funcionamiento
 
