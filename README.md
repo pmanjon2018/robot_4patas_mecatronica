@@ -53,6 +53,8 @@ El prototipo final se consolidó respetando estrictamente el marco de restriccio
 
 ## 🛠️ Diseño y Arquitectura del Sistema
 
+Me he basado en el modelo open source https://www.thingiverse.com/thing:1009659/files en el cual he adaptado los componentes con Blender.
+
 Para simplificar las fases de diseño, manufactura y posterior integración mecatrónica, el robot se estructuró modularmente en los siguientes seis subsistemas interactuantes:
 
 ### 1. Estructura Mecánica
@@ -81,7 +83,6 @@ Para simplificar las fases de diseño, manufactura y posterior integración meca
 
 > 💡 **Nota de Ingeniería:** Esta división modular facilitó de forma significativa las tareas independientes de prueba, calibración analítica de sensores y aislamiento de errores de software/hardware.
 ---
-Me he basado en el modelo open source https://www.thingiverse.com/thing:1009659/files en el cual he adaptado los componentes con Blender.
 
 ## 🕹️ Modos de Funcionamiento
 
