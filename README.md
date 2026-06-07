@@ -74,7 +74,7 @@ Para simplificar las fases de diseño, manufactura y posterior integración meca
 * **Detalles:** Encargado de la lógica de control en tiempo real, procesamiento de señales de sensores, resolución cinemática y coordinación síncrona de los actuadores.
 
 ### 5. Alimentación y Potencia
-* **Componentes:** Batería recargable y etapa de regulación/distribución de energía.
+* **Componentes:** Batería recargable con pilas de 3.7V para la distribución de la energía.
 * **Detalles:** Garantiza el suministro estable y desacoplado eléctricamente entre la etapa de control (sensible al ruido) y la etapa de potencia (motores).
 
 ### 6. Interfaz de Usuario
